@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charest="UTF-8">
+        <link rel="stylesheet" href="index.css">
+        <link rel="shortcut icon" href="../img/favicon.jpeg">
+        <title>クリックゲーム</title>
+    </head>
+    <body>
+    <button id="alert_button">通知を受け取らない</button>
+    <p id="text_click">クリック回数: 0回　ポイント: 0ポイント</p><br>
+    
+    <div class="center">
+        <button id="button_click">click here!</button>
+    </div><br>
+    
+    <div class="center">
+        <button class="btn">加速度を上げる(-1000point)</button>
+        <button class="btn">1秒に1回クリック(-1000point)</button>
+        <button class="btn">1秒に2回クリック(-1500point)</button>
+        <button class="btn">加速度を2倍にする(-10000point)</button>
+    </div>
+    
+    <ul id="progress">
+        <strong id="progress_text">進捗</strong>
+    </ul>
+    <script src="app.js"></script>
+    </body>
+</html>
