@@ -1,0 +1,12 @@
+div#header{
+    background-color: #2bb32b;
+    height: 100px;
+    text-align: center;
+}
+
+div#header > span{
+    font-size: 50pt;
+    font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
+    font-weight: bolder;
+    color: #b22ab3;
+}
