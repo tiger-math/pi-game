@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="shortcut icon" href="../img/favicon.jpeg">
+        <title>Number guessing game |pi-game</title>
+        <style>
+            body{
+                background: #f0f8ff;
+                text-align: center;
+                padding: 10px;
+            }
+            input{
+                width: 200px;
+            }
+            div#result{
+                width: 300px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            button:nth-of-type(1){
+                border: none;
+                background: #9696fa;
+                font-size: 18px;
+                border-radius: 10px;
+            }
+            button:nth-of-type(2){
+                margin: 10px;
+                border: none;
+                background: #ffa280;
+                border-radius: 10px;
+                padding: 10px;
+                font-size: 20px;
+                margin-left: -200px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Number guessing game</h1>
+        <p>Please guess number between 0 and 100</p>
+        <input type="number" min="0" max="100">
+        <button onclick="submit()">Submit number</button><br><br>
+        
+        <div id="guesses" style="display:none;">Preview guesses:</div>
+        <div id="result" style="display:none;"></div>
+        <button onclick="init()" style="display:none;">Next game</button>
+        <script src="../info.js"></script>
+        <script src="app.js"></script>
+    </body>
+</html>
