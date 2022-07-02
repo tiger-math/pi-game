@@ -32,7 +32,7 @@ function test(wcheck) {
 d3.csv("https://docs.google.com/spreadsheets/d/1pneC_x7ZY3QHJgwFj1UkG7I3zi1cu52Bkf9Sd38LN7Q/export?format=csv&range=A3:D", function(error, data){
 	var text = "";
 	for(var i=0; i<data.length; i++){
-		text += i+1 + " 名前: <a href=\"mailto:" + data[i].Mail + "\">" + data[i].Name + "</a> " + data[i].Timestamp + "<pre>" + data[i].Comments + "</pre>";
+		text += i+1 + " 名前: " + data[i].Name + data[i].Timestamp + "<pre>" + data[i].Comments + "</pre>";
 	}
 	d3.select("#comments").html(text);
 });
