@@ -1,12 +1,35 @@
-div#header{
+header{
     background-color: #2bb32b;
     height: 100px;
-    text-align: center;
+    align-items: center;
+    display: flex;
 }
 
-div#header > span{
+header > h1{
     font-size: 50pt;
     font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
     font-weight: bolder;
     color: #b22ab3;
+    margin-right: auto;
+    margin-left: 10%;
+
+}
+
+/* aタグ */
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+a:visited{
+	color: blue;
+}
+
+.header_menu_item{
+    list-style: none;
+    display: inline-block;
+    padding: 10px;
 }
