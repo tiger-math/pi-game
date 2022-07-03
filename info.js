@@ -12,14 +12,14 @@
 const site = [
     {
         name: 'number-guessing-game',
-        tag: [0],
+        tag: [0,2,3,4],
         link: 'number-guessing-game/index.html',
 		img: '数字.webp',
 		date: '2022.07.02',
         txt: '0<n≦100を満たす自然数nを6回のチャンスで当てるゲーム'
     },{
         name: 'click-game',
-        tag: [0],
+        tag: [0,4],
         link: 'click-game/index.html',
 		img: 'カーソル.jpeg',
 		date: '2022.07.01',
@@ -29,7 +29,10 @@ const site = [
 
 const tag = [
     'ゲーム',
-    'ツール'
+    'ツール',
+    '頭脳系',
+    'パズル',
+    '暇つぶし'
 ];
 
 const header_menu = [
