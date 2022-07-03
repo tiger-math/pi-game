@@ -63,13 +63,13 @@ for (i=0; i<site.length; i++) {
 //---------------tag---------------
 let numbers_tag = [];
 for (i=0; i<tag.length; i++) {
-	text_box = $('#tag_ul');
+	text_box = $('#tag_div');
 	
-	//li#tag_li+i
-	create('li');
-	new_elm.id = 'tag_li' + i;
+	//div#tag_div+i
+	create('div');
+	new_elm.id = 'tag_div' + i;
 	apC();
-	text_box = $('#tag_li' + i);
+	text_box = $('#tag_div' + i);
 	
 	create('a');
 	new_elm.href = 'tag.html?' + i;
