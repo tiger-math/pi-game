@@ -1,15 +1,3 @@
-{/* <div id="contents">
-            <h1>すべてのコンテンツ</h1>
-            <div class="page">
-                <span class="page_tag">#a</span><br>
-                <span class="page_image"><img src="favicon.jpeg" alt="favicon" align="left" width="50px" height="50px"></span>
-                <a href="#" class="page_name">aaaa</a>
-                <span class="page_date">最終更新日. 2022.6.30</span>
-            </div>
-        </div> */}
-
-//未来の私へ　if文の中、全部tabやってぇ(伝われ)
-
 //---------------page---------------
 for (i=0; i<site.length; i++) {
 	if (site_name == 'index' || site[i].tag.includes(loc.search)) {
@@ -67,7 +55,7 @@ for (i=0; i<site.length; i++) {
 	//div.page_txt
 	create('div');
 	new_elm.className = 'page_txt';
-	new_elm.innerHTML = site[i].txt;
+	new_elm.innerText = site[i].txt;
 	apC();
 	}
 }
