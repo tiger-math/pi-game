@@ -61,6 +61,7 @@ for (i=0; i<site.length; i++) {
 }
 
 //---------------tag---------------
+let numbers_tag = [];
 for (i=0; i<tag.length; i++) {
 	text_box = $('#tag_ul');
 	
@@ -73,6 +74,23 @@ for (i=0; i<tag.length; i++) {
 	create('a');
 	new_elm.href = 'tag.html?' + i;
 	new_elm.innerText = '#' + tag[i];
+	apC();
+
+	numbers_tag.push(0);
+}
+
+// ---------------count tag---------------
+for (i=0; i<site.length; i++) {
+	for (i2=0; i2<site[i].tag.length; i2++) {
+		numbers_tag[site[i].tag[i2]]++;
+	}
+}
+
+// create li
+for (i=0; i<numbers_tag.length; i++) {
+	text_box = $('#numbers_tag');
+	create('li');
+	new_elm.innerText = numbers_tag[i];
 	apC();
 }
 
