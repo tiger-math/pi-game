@@ -30,6 +30,7 @@ const site = [
 const tag = [
     'ゲーム',
     'ツール',
+    '記事',
     '頭脳系',
     'パズル',
     '暇つぶし'
@@ -139,3 +140,8 @@ create('link');
 new_elm.rel = 'stylesheet';
 new_elm.href = c + 'page.css';
 apC();
+
+// title
+if (site_name != 'index') {
+    $('title')[0].innerText += ' |pi-game';
+}
