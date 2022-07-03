@@ -2,6 +2,10 @@ body{
     background: #f0f8ff;
 }
 
+h1{
+    font-size: 25pt;
+}
+
 div#memo{
     background-color: #fddea5;
     padding: 10px;
@@ -51,6 +55,10 @@ li{
 	list-style: none;
 }
 
+#contents_h1{
+    font-size: 25pt;
+}
+
 .page{
     border-radius: 10px;
     background-color: #ccffff;
@@ -92,7 +100,11 @@ li{
 	margin-top: -10px;
 }
 
-.tag_elm{
+#tag_table{
+    display: table;
+    font-size: 19pt;
+}
+
+.tag_table_cell{
     display: table-cell;
-	font-size: 19pt;
 }
