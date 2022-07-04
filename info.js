@@ -14,14 +14,14 @@ const site = [
         name: 'number-guessing-game',
         tag: [0,3,4,5],
         link: 'number-guessing-game/index.html',
-		img: '数字.webp',
+		img: 'number-guessing.webp',
 		date: '2022.07.02',
         txt: '0<n≦100を満たす自然数nを6回のチャンスで当てるゲーム'
     },{
         name: 'click-game',
         tag: [0,5],
         link: 'click-game/index.html',
-		img: 'カーソル.jpeg',
+		img: 'click-game.jpeg',
 		date: '2022.07.01',
         txt: 'クリックしていくだけのゲーム'
     }
